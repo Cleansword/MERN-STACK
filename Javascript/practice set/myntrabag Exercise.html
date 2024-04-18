@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra bag exercise</title>
+
+</head>
+<style>
+    .addtobag, .add11{
+        color:black;
+        background-color: rgb(117, 213, 117);
+        width:120px;
+        padding: 5px 5px;
+        border-radius: 10px;
+        border: none;
+        margin: 0 5px;
+
+    }
+    .wishlist{
+        width:180px;
+        border-radius:8px;
+        padding:5px 5px;
+        border:2px solid black;
+    }
+    .add11{
+        width: 160px;
+    }
+    .removeitems{
+        width:130px;
+        border-radius:8px;
+        padding:5px 5px;
+        border:2px solid black;
+    }
+    .removeall{
+        width:130px;
+        border-radius:8px;
+        padding:5px 5px;
+        border:2px solid black;
+    }
+    
+
+</style>
+<body>
+    <button class="addtobag" onclick="sum1(), show()">Add to bag</button>
+    <button class="wishlist" onclick="alert('your item is added to wishlist')">MOVE TO WISHLIST</button>
+    <button class="add11" onclick="sum11() , show()">add 1+1 sale items</button>
+    <button class="removeitems" onclick="remove(),show()">Remove Items</button>
+    <button class="removeall" onclick="removeall(),show()">Remove All</button>
+    <h1 id="para1">Your Bag has 0 items</h1>
+</body>
+<script>
+    let a=0;
+    function sum1(){
+        a+=1;
+    }
+    function sum11(){
+        a+=2;
+    }
+    function remove(){
+        a-=1;
+    }
+    function removeall(){
+        a=0;
+    }
+    function show(){
+        document.querySelector('#para1').innerText=`your bag has ${a} items`;
+    }
+   
+</script>
+</html>
