@@ -1,2 +1,12 @@
 initailaize a project with npm ( npm init -y)
 install express (npm i express)
+
+setting up parsers for form
+
+settinh up ejs for ejs pages
+
+setting up public static files
+
+dynamic routing
+        dynamic routing
+        how to get data coming from frontend at backend route
