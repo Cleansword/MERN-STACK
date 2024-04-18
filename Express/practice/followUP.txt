@@ -1,0 +1,2 @@
+initailaize a project with npm ( npm init -y)
+install express (npm i express)
