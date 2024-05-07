@@ -11,9 +11,9 @@ app.get('/',(req,res)=>{
 
 app.get('/create',async (req,res)=>{  
     let user=await usermodel.create({   //this is used to add a data in database
-        name:"sonali",
-        username:"sona",
-        password:"sonakri"
+        name:"sagar",
+        username:"sksagar",
+        password:"sagar@123"
     })
     res.send(user);
 })
