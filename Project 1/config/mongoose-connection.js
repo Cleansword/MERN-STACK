@@ -1,6 +1,7 @@
 const mongoose=require('mongoose');
+
 mongoose
-.connect("mongodb://127.0.0.1:27017/scatch");
+.connect("mongodb://127.0.0.1:27017/scatch")
 .then(function(){
     console.log("connected");
 })
@@ -8,5 +9,5 @@ mongoose
     console.log(err);
 })
 
-module.export=mongoose.connection;
+module.exports=mongoose.connection;
 
